@@ -1,0 +1,61 @@
+/*white = #ffffff
+gray = #394648
+blue = #10c9c3
+green = #0b807d
+yellow = #ffe74c
+
+font = Century Gothic
+*/
+
+#logo {
+    width: 100px;
+    border-style: solid;
+    background-color: #ffe74c;
+}
+
+header {
+    padding: 10px;
+    background-color: #0b807d;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+nav {
+    margin: 10px;
+    padding: 10px;
+}
+
+.Frank{
+    background-color: #ffe74c;
+    padding: 5px;
+    margin: 4px;
+    color: #394648;
+    font-family: sans-serif;
+}
+
+#WeatherStory {
+    color: #394648;
+    padding: 10px;
+    border-style: solid;
+    border-color: #394648;
+    border-width: 3px;
+    margin: 10px;
+}
+
+.contact {
+    color: #394648;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #394648;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10px;
+}
+
+.bottom {
+    color: #394648;
+    border-style: solid;
+    border-color: #394648;
+    border-width: 3px;
+    margin: 10px;
+}
