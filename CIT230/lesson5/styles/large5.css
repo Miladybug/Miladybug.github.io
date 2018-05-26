@@ -1,0 +1,28 @@
+@media only screen and (min-width: 64em) {
+        
+    #panorama { display: block; }  
+    #mainImage { display: none; }
+
+  }
+main{}
+
+#panorama { 
+    width: 100%;
+   /* clip: rect(0px,60px,200px,0px);*/
+    height: 250px;
+    border: solid;
+}  
+#articleImage{
+    max-height: 16em;
+    margin: 20px;
+    margin-top: 10px;
+}
+.weather-summary{
+    font-size: 25px;
+}
+.conditions{
+    float: right;
+}
+.current{
+    float: left;
+}
