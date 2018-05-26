@@ -19,6 +19,8 @@ main{}
 }
 .weather-summary{
     font-size: 25px;
+    margin: 20px;
+    
 }
 .conditions{
     float: right;
