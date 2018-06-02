@@ -1,0 +1,110 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    .forecast { display: block }  /* show the 10-day forecast with the medium view and up */
+
+  }
+nav ul {
+    background-color: #ffe74c;
+    list-style-type: none;
+    margin: 0px;
+    color: #ffe74c;
+    max-width: 100%; 
+    text-align: center;
+}
+nav ul li {
+    padding: 0%;
+    float: left;
+    background-color: #ffe74c;
+    color: #4CAF50;
+    border-width: 5px;
+    border-color: gray;
+    width: 16.667%;
+    font-size: 85%
+}
+nav ul li a {
+    display: block;
+    max-width: 500px;
+    padding: 7%;
+    border: solid;
+    border-width: 1px;
+    border-color: #ffe74c;
+    margin: 0;
+    border: solid;
+    border-color: gray;
+    border-width: 1px;
+}
+.dropdown-content{
+    display: block;
+}
+
+main {}
+#Fsmall{
+    display: none;
+}
+#Flarge{
+    display: none;
+}
+#Fmed{
+    display: block;
+    float: left;
+    width: auto;
+    margin: 5px;
+    height: 17em;
+    border: solid;
+}
+#Ltext{
+    display: none;
+}
+#Stext{
+    display: none;
+}
+#Mtext{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 180px;
+    left: 25px;
+    font-size: 30px;
+}
+
+#icon{
+    width: 80px;
+    margin-right: 3%;
+}
+section.forecast{
+    text-align: center;
+    float: none;
+    margin: 5px;
+}
+th{
+    border: solid;
+    border-width: 2px;
+}
+
+td{
+    border: solid;
+    border-width: 2px;
+}
+
+table{
+    width: 99%;
+    margin: 8px;
+    border: solid;
+    border-collapse: collapse;
+}
+.weather-summary{
+    height: 18em;
+}
+
+#articleImage{
+    max-width: 50%;
+    float: right;
+    max-height: 16em;
+}
+article{
+        height: 21em;
+}
