@@ -5,6 +5,9 @@
 
   }
 main{}
+.dropbtn{
+    display: none;
+}
 
 #Flarge { 
     display: block;

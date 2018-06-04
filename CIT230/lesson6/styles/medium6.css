@@ -40,7 +40,9 @@ nav ul li a {
 .dropdown-content{
     display: block;
 }
-
+.dropbtn{
+    display: none;
+}
 main {}
 #Fsmall{
     display: none;

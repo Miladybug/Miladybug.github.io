@@ -16,10 +16,15 @@ document.getElementById("currentdate").innerHTML = dayOfWeek + ", " + d.getDate(
 
 
 function dropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("navigation").classList.toggle("hide");
 }
 
-window.onclick = function(event) {
+        // Make X
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+/*window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -31,4 +36,4 @@ window.onclick = function(event) {
       }
     }
   }
-}
+}*/

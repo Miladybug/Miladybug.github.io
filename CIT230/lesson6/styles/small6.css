@@ -112,9 +112,8 @@ nav ul li a:hover {
     background-color: #555;
     color: white;
 }
-.dropdown-content{
+.hide{
     display: none;
-    z-index: 1;
 }
 
 
