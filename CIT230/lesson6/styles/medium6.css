@@ -43,6 +43,9 @@ nav ul li a {
 .dropbtn{
     display: none;
 }
+button{
+    display: none;
+}
 main {}
 #Fsmall{
     display: none;
