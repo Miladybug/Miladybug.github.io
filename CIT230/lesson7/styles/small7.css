@@ -1,0 +1,227 @@
+/*white = #ffffff
+gray = #394648
+blue = #10c9c3
+green = #0b807d
+yellow = #ffe74c
+
+font = Century Gothic
+*/
+
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+container img{
+    max-width: 90%;
+    margin: 5%;
+    margin-bottom: 0;
+}
+
+.grid-item:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+.grid-item{
+    text-align: center;
+}
+
+
+container div{
+    width: 90%;
+    margin: auto
+}
+
+body {
+  font-size: 16px;
+    font-family: "Didact Gothic";
+  ____________  /* Declare the base font-family */
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {    
+    font-family: "Didact Gothic";
+    padding: 10px;
+    background-color: #0b807d;
+    color: #ffffff;
+    max-width: 5000px;
+    margin: auto;
+    text-align: left;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header h1 {
+    /*position: absolute;
+    left: 130px;*/
+    display: flex;
+    //justify-content: center;
+    font-size: 22px;
+}
+header img {
+    width: 100px;
+    border-style: solid;
+    background-color: #ffe74c;
+    /*position: absolute;
+    left: 0;
+    top: 0;*/
+    margin: 15px;
+}
+header .subheading {
+    /*position: absolute;
+    left: 110px;
+    top: 48px;*/
+    padding: 20px;
+    font-size: 15px;
+
+}
+
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+nav {
+    font-family: "Didact Gothic";
+}
+.dropbtn {
+    background-color:  #0b807d;
+    border:  #0b807d;
+    cursor: pointer;
+    transition:: 0.4s;
+    margin: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;*/
+}
+nav ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    max-width: 5000px;
+    background-color: #ffe74c;
+    text-align: center;
+}
+nav ul li {
+    color: #4CAF50;
+    border-width: 5px;
+    border-color: gray;
+}
+nav ul li a {
+    display: block;
+    max-width: 500px;
+    padding: 10px;
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+}
+nav ul li a:hover {
+    background-color: #555;
+    color: white;
+}
+.hide{
+    display: none;
+}
+
+
+main {
+    text-align: center;
+}
+#mainImage{
+    max-width: 100%;
+    margin: 0px;
+    height: auto;
+    border: solid;
+}
+
+#Flarge{
+    display: none;
+}
+#Fmed{
+    display: none;
+}
+#Fsmall{
+    display: block;
+    width: 100%;
+    border: solid;
+    border-color: black;
+}
+#Ltext{
+    display: none;
+}
+#Mtext{
+    display: none;
+}
+#Stext{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    /*display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;*/
+    font-size: 30px;
+}
+
+
+#icon{
+    width: 60px;
+    display: flex;
+    //justify-content: flex-end;
+    float: right;
+}
+
+.forecast{
+    display: none;
+}
+
+article{
+    border: solid;
+    margin: 10px;
+
+}
+#articleImage{
+    margin: 5px;
+    max-width: 95%;
+}
+
+.contact{
+    background-color: #10c9c3;
+    padding: 1px;
+}
+.footer-bar{
+    background-color: #0b807d;
+    padding: 10px;
+}
+footer {
+    margin: 0px;
+    font-family: "Didact Gothic";
+    text-align: center;
+}
