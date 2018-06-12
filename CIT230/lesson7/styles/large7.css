@@ -36,7 +36,7 @@ main{}
     display: none
 }
 #Ltext{
-    display: block;
+    display: none;
     color: white;
     position: absolute;
     top: 190px;
@@ -50,7 +50,6 @@ main{}
     margin: 20px;
     margin-top: 10px;
 }
-
 
 .weather-summary{
     font-size: 25px;

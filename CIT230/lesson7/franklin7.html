@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" media="only screen and (min-width: 36.5em)" href="styles/medium7.css">
     <link rel="stylesheet" type="text/css" media="only screen and (min-width: 64em)" href="styles/large7.css">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>    
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 </head>
 
 <body>
@@ -37,35 +37,36 @@
     </nav>
 
     <main>
-        <img src="images/FranklinLarge5.jpg" id="Flarge" alt="panorama">
-        <div id="Ltext">Large</div>
-        <img src="images/FranklinSmall3.jpg" id="Fsmall" alt="Franklin image">
-        <div id="Stext">Small</div>
-        <img src="images/FranklinMed4.jpg" id="Fmed" alt="regular image">
-        <div id="Mtext">Medium</div>
-        <!--<source media="(min-width: 36.5em)" srcset="images/FranklinMed3.jpg" id="Fmed">
+        <div id="FlexTop">
+            <img src="images/FranklinLarge5.jpg" id="Flarge" alt="panorama">
+            <div id="Ltext">Large</div>
+            <img src="images/FranklinSmall3.jpg" id="Fsmall" alt="Franklin image">
+            <div id="Stext">Small</div>
+            <img src="images/FranklinMed4.jpg" id="Fmed" alt="regular image">
+            <div id="Mtext">Medium</div>
+            <!--<source media="(min-width: 36.5em)" srcset="images/FranklinMed3.jpg" id="Fmed">
         <source media="(min-width: 64em)" srcset="images/FranklinLarge4.jpg" id="Flarge">
         <img src="images/FranklinSmall2.jpg" alt="Picture" style="width:auto;" id="Fsmall">-->
-        <section class="weather-summary">
-            <h2>Franklin</h2>
-            <div class="current">
-                <p>Sunny</p>
-                <picture>
-                    <img src="images/Sun.png" alt="" id="icon">
-                </picture>
-            </div>
-            <!--<h3>Weather Summary</h3>-->
-            <div class="highlow">
-                <p>High: <span id="highTemp">90</span>&deg;F</p>
-                <p>Low: <span id="lowTemp">66</span>&deg;F</p>
-            </div>
-            <div class="conditions">
-                <p>Precipitation: 0&deg;F</p>
-                <p>Wind Speed: <span id="WindSpeed">5</span> mpg SW</p>
-                <p>Wind Chill: <span id="windchill"></span>&deg;</p>
-            </div>
-        </section>
-
+            <section class="weather-summary">
+                <h2>Franklin</h2>
+                <div class="current">
+                    <p>Sunny</p>
+                    <picture>
+                        <img src="images/Sun.png" alt="" id="icon">
+                    </picture>
+                </div>
+                <!--<h3>Weather Summary</h3>-->
+                <div class="highlow">
+                    <p>High: <span id="highTemp">90</span>&deg;F</p>
+                    <p>Low: <span id="lowTemp">66</span>&deg;F</p>
+                </div>
+                <div class="conditions">
+                    <p>Precipitation: 0&deg;F</p>
+                    <p>Wind Speed: <span id="WindSpeed">5</span> mpg SW</p>
+                    <p>Wind Chill: <span id="windchill"></span>&deg;</p>
+                </div>
+            </section>
+        </div>
         <section class="forecast">
             <h3>Ten Day Forecast</h3>
             <table>
@@ -123,4 +124,5 @@
 
 </body>
 <script type="text/javascript" src="scripts/javascript7.js"></script>
+
 </html>
