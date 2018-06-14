@@ -10,6 +10,17 @@ font = Century Gothic
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
+#thanks{
+    font-size: 30px;
+    margin-top: 135px;
+    margin-bottom: 135px;
+}
+
+fieldset{
+    margin: auto;
+    width: 300px;
+}
+
 container img{
     max-width: 90%;
     margin: 5%;

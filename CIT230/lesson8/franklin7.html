@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Franklin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Franklin page">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 36.5em)" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 64em)" href="styles/large.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/TemporaryLogo.png" alt="logo" id="logo">
+        <h1>Brainstorm</h1>
+        <div class="subheading">A Meteor-cre weather service with puns that will make you Flurrious</div>
+    </header>
+
+    <nav class="dropdown">
+        <button class="dropbtn" onclick="dropdown();myFunction(this)">       
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div></button>
+        <ul id="navigation" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="franklin7.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="FlexTop">
+            <img src="images/FranklinLarge5.jpg" id="Flarge" alt="panorama">
+            <div id="Ltext">Large</div>
+            <img src="images/FranklinSmall3.jpg" id="Fsmall" alt="Franklin image">
+            <div id="Stext">Small</div>
+            <img src="images/FranklinMed4.jpg" id="Fmed" alt="regular image">
+            <div id="Mtext">Medium</div>
+            <!--<source media="(min-width: 36.5em)" srcset="images/FranklinMed3.jpg" id="Fmed">
+        <source media="(min-width: 64em)" srcset="images/FranklinLarge4.jpg" id="Flarge">
+        <img src="images/FranklinSmall2.jpg" alt="Picture" style="width:auto;" id="Fsmall">-->
+            <section class="weather-summary">
+                <h2>Franklin</h2>
+                <div class="current">
+                    <p>Sunny</p>
+                    <picture>
+                        <img src="images/Sun.png" alt="" id="icon">
+                    </picture>
+                </div>
+                <!--<h3>Weather Summary</h3>-->
+                <div class="highlow">
+                    <p>High: <span id="highTemp">90</span>&deg;F</p>
+                    <p>Low: <span id="lowTemp">66</span>&deg;F</p>
+                </div>
+                <div class="conditions">
+                    <p>Precipitation: 0&deg;F</p>
+                    <p>Wind Speed: <span id="WindSpeed">5</span> mpg SW</p>
+                    <p>Wind Chill: <span id="windchill"></span>&deg;</p>
+                </div>
+            </section>
+        </div>
+        <section class="forecast">
+            <h3>Ten Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Franklin Breaks Record</h3>
+            <img src="images/1.jpeg" id="articleImage" alt="articleImage">
+            <p class="town-article"> <strong>Me</strong> : Yeah, I can finish my homework in five minutes.</p>
+            <p><strong>Lemony Snicket</strong> : Many things can be done in five minutes, including enjoyable events such as confessing your love, opening a gift, or eating a delicious meal, as well as miserable events like death, a violent crime, or a severe anxiety attack. One thing that cannot be done in under five minutes is a ten page essay, a phrase which here means "a student's worst nightmare", and while I can assure you, dear viewers, that the boy would achieve one of these feats within five minutes, I am sorry to say it was not the essay, but rather the anxiety attack.
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <section class="contact">
+            <h3>Contact Information</h3>
+            <p>999.999.9999</p>
+            <p>123 Main St. Anytown, US 99999</p>
+            <p>Google Map</p>
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | Brainstorm | <span id="currentdate"></span>
+        </section>
+    </footer>
+
+</body>
+<script type="text/javascript" src="scripts/javascript7.js"></script>
+
+</html>
