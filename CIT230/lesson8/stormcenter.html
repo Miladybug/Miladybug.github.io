@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Storm Center</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Franklin page">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 36.5em)" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 64em)" href="styles/large.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/TemporaryLogo.png" alt="logo" id="logo">
+        <h1>Brainstorm</h1>
+        <div class="subheading">A Meteor-cre weather service with puns that will make you Flurrious</div>
+    </header>
+
+    <nav class="dropdown">
+        <button class="dropbtn" onclick="dropdown();myFunction(this)">       
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div></button>
+        <ul id="navigation" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="http://www.example.com/example.htm" target="_self">
+            <fieldset>
+                <legend> Personal information</legend>
+                Full name: <br>
+                <input type="text" name="fullname" required pattern="[A-Za-z].{6,}"> <br>
+                Email: <br>
+                <input type="email" name="email" placeholder="johndoe@example.com"><br> Phone number: <br>
+                <input type="tel" name="phone" required><br> 
+                Zip code: <br>
+                <input type="number" name="zip" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Storm information</legend>
+                Storm date: <br>
+                <input type="text" name="date"><br> Storm type: <br>
+                <input list="stormType" name="stormType">
+                <datalist id="stormType">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstrom">
+                <option value="Tornado">
+            </datalist><br> Storm severity: <br>
+                <input type="range" name="range" min="1" max="10"><br> Storm region: <br>
+                <select name="region">
+               <option value="SelectRegion" selected disabled> Select Region</option>
+                <option value="Franklin">Franklin</option>
+                <option value="Greenville">Greenville</option>
+                <option value="Springfield">Springfield</option>
+            </select><br> User in-danger level: <br>
+                <input type="radio" name="danger" value="yes"> Yes<br>
+                <input type="radio" name="danger" value="maybe"> Maybe<br>
+                <input type="radio" name="danger" value="no"> No<br>
+            </fieldset>
+            Additional information or comments: <br>
+            <textarea name="additional" rows="10" cols="30">
+            </textarea><br>
+            <input type="submit" value="Submit" name="submit">
+        </form>
+    </main>
+
+    <footer>
+        <section class="contact">
+            <h3>Contact Information</h3>
+            <p>999.999.9999</p>
+            <p>123 Main St. Anytown, US 99999</p>
+            <p>Google Map</p>
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | Brainstorm | <span id="currentdate"></span>
+        </section>
+    </footer>
+
+</body>
+<script type="text/javascript" src="scripts/javascript.js"></script>
+
+</html>
