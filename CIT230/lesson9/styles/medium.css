@@ -8,15 +8,7 @@
 
   }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px;
-    width: 100%;
-}
-.grid-item{
-    text-align: center;
-}
+
 
 nav{
     display: block;
@@ -65,37 +57,7 @@ button{
 .hide{
     display: block;
 }
-main {}
-#Fsmall{
-    display: none;
-}
-#Flarge{
-    display: none;
-}
-#Fmed{
-    display: block;
-    width: auto;
-    margin-top: ;
-    height: 17em;
-    border: solid;
-    float: left;
-}
-#Ltext{
-    display: none;
-}
-#Stext{
-    display: none;
-}
-#Mtext{
-    display: none;
-    color: white;
-    position: absolute;
-    top: 180px;
-    left: 25px;
-    font-size: 30px;
-}
 
-#icon{}
 section.forecast{
     text-align: center;
     float: none;
@@ -127,5 +89,4 @@ table{
     max-height: 16em;
 }
 article{
-        height: 21em;
 }
