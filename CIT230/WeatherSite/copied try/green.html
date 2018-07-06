@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head html-include="modules/head.html">
+        <title>Tri-City Paper Pilots | Greenville</title>
+    </head>
+
+    <body>
+        <div class="body-container">
+            <header html-include="modules/body-header.html">
+            </header>
+
+            <nav html-include="modules/nav.html" html-include-cb="navWayfind">
+            </nav>
+
+            <main>
+                <h2 class="page-title">Greenville City</h2>
+
+                <div id="weather-info" gridpoint="ILN/27,82" html-include="modules/weather-info.html" html-include-cb="loadWeather">
+                </div>
+
+                <article>
+                    <h3>Greenville Has Awesome Event</h3>
+                    <img src="https://placehold.it/300x200" alt="Lorem Pixel Image">
+                    <p class="article-text">
+                        <b>V</b>oluptatum aut laudantium voluptatem. Voluptate quia rem dolor. Laudantium enim delectus aut debitis sint. Culpa dolore ipsa alias sint ipsam facilis. Quia fugit dolores nihil aut. Sint assumenda quasi distinctio perspiciatis harum autem nam amet. Molestiae minus esse magnam. Similique totam reiciendis ipsam iste. Consequatur quasi et et laborum qui aut. Ab fugit quis sed voluptate tempora enim dolore optio. Architecto est beatae nobis tempora dignissimos totam. Facilis et vero veritatis. Quo consequuntur laborum et dolor aut cupiditate. Ut id ratione veritatis voluptas sed. Animi consequatur illum tempore. Impedit eligendi excepturi ab. Delectus deserunt possimus voluptate doloribus dolores exercitationem. Et temporibus amet expedita reprehenderit ea. Sit sit excepturi quia animi natus quia. A itaque excepturi sit eius facere. Et eos cumque explicabo aliquid. Veritatis et voluptates dolorem molestiae cum enim sint cupiditate. Ea amet voluptates ut ipsam. Non quo ut corporis hic aperiam fugit. Vero ut assumenda ipsa assumenda nihil earum.
+                    </p>
+                </article>
+            </main>
+
+            <footer html-include="modules/footer.html" html-include-cb="setCurrentDate">
+            </footer>
+        </div>
+        <script type="text/javascript" src="scripts/wayfind.js"></script>
+        <script type="text/javascript" src="scripts/currentdate.js"></script>
+        <script type="text/javascript" src="scripts/weather.js"></script>
+        <script type="text/javascript" src="scripts/modularize.js"></script>
+    </body>
+</html>

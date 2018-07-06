@@ -1,43 +1,103 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en-us">
-    <head>
-    <title>Brainstorm | Springfield</title>
+
+<head>
+    <title>Franklin</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Franklin site">
-    <link rel="stylesheet" href="styles/weather.css">
+    <meta name="description" content="Franklin page">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 36.5em)" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 64em)" href="styles/large.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 </head>
 
 <body>
-    <header>
-        <img src="images/TemporaryLogo.png" alt="logo" id="logo">
-        <h1>Brainstorm</h1>
-        <div class="subheading">A Meteor-cre weather service with puns that will make you Flurrious</div>
+
+    <header html-include="header.html">
     </header>
 
-    <nav>
-        <div class="Frank">
-            <a href="Brainstorm.html"> Home | </a>
-            <a href="Franklin.html">Franklin | </a>
-            <a href="Greenville.html">Greenville | </a>
-            <a href="Springfield.html">Springfield | </a>
-            <a href="StormCenter.html">Storm Center | </a>
-            <a href="Gallery.html">Gallery</a>
-        </div>
+    <nav html-include="nav.html" html-include-cb="navWayfind">
     </nav>
 
     <main>
-        <h3>weather data</h3>
-        <h3>10 day forcast</h3>
-        <img src="">
-        <h3>Title</h3>
-        <p>article</p>
-        <img src="">
+        <div id="FlexTop">
+            <img src="images/FranklinLarge5.jpg" id="Flarge" alt="panorama">
+            <div id="Ltext">Large</div>
+            <img src="images/FranklinSmall3.jpg" id="Fsmall" alt="Franklin image">
+            <div id="Stext">Small</div>
+            <img src="images/FranklinMed4.jpg" id="Fmed" alt="regular image">
+            <div id="Mtext">Medium</div>
+            <section class="weather-summary">
+                <h2>Springfield</h2>
+                <div class="current">
+                    <p>Current weather: <span id="weather-string"></span></p>
+                    <picture>
+                        <img src="" alt="weather-icon" id="image-icon">
+                    </picture>
+                </div>
+                <div class="highlow">
+                    <!--
+                    <p>High: <span id="highTemp">90</span>&deg;F</p>
+                    <p>Low: <span id="lowTemp">66</span>&deg;F</p>
+-->
+                    <p>Current Temperature: <span id="current-temp"></span>&deg;F</p>
+                </div>
+                <div class="conditions">
+                    <p>Wind Speed: <span id="wind-speed"></span> mph SW</p>
+                </div>
+            </section>
+        </div>
+        <section class="forecast">
+            <h3>Ten Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Springfield Breaks Record</h3>
+            <img src="images/1.jpeg" id="articleImage" alt="articleImage">
+            <p class="town-article"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu sem felis. Ut fermentum libero sed leo ultrices faucibus. Aenean sed magna ut leo laoreet pulvinar at hendrerit risus. Fusce non lectus eget nisl mollis tempor. Morbi sodales quam eget fringilla vestibulum. Donec sit amet pulvinar quam. Mauris pharetra odio facilisis lectus mollis posuere. Nam vulputate facilisis faucibus.</p>
+            <p>Suspendisse suscipit lorem vitae nunc condimentum eleifend. Etiam nec consequat nunc. Nam eget feugiat ex. Aenean sed tellus volutpat, interdum felis eget, placerat ipsum. Aenean sit amet mollis quam. Pellentesque a diam at velit volutpat mollis in sed quam. 
+            </p>
+        </article>
+
     </main>
 
-    <footer>
-        <aside class="contact">CONTACT</aside>
-        <p class="bottom">Copyright, title, <span id="currentdate">date</span></p>
+<footer html-include="footer.html">
     </footer>
+
 </body>
+<script type="text/javascript" src="scripts/Springfield-weather.js"></script>
+<script type="text/javascript" src="scripts/include.js"></script>
+<script type="text/javascript" src="scripts/active.js"></script>
 </html>

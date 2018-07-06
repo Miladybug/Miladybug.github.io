@@ -1,38 +1,71 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en-us">
-    <head>
-    <title>Brainstorm | Storm Center</title>
+
+<head>
+    <title>Storm Center</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Franklin site">
-    <link rel="stylesheet" href="styles/weather.css">
+    <meta name="description" content="Franklin page">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 36.5em)" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 64em)" href="styles/large.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 </head>
 
 <body>
-    <header>
-        <img src="images/TemporaryLogo.png" alt="logo" id="logo">
-        <h1>Brainstorm</h1>
-        <div class="subheading">A Meteor-cre weather service with puns that will make you Flurrious</div>
+
+    <header html-include="header.html">
     </header>
 
-    <nav>
-        <div class="Frank">
-            <a href="Brainstorm.html"> Home | </a>
-            <a href="Franklin.html">Franklin | </a>
-            <a href="Greenville.html">Greenville | </a>
-            <a href="Springfield.html">Springfield | </a>
-            <a href="StormCenter.html">Storm Center | </a>
-            <a href="Gallery.html">Gallery</a>
-        </div>
+    <nav html-include="nav.html" html-include-cb="navWayfind">
     </nav>
 
     <main>
-
+        <form action="https://miladybug.github.io/CIT230/lesson8/thanks.html" target="_self">
+            <fieldset>
+                <legend> Personal information</legend>
+                Full name: <br>
+                <input type="text" name="fullname" required pattern="[A-Za-z].{6,}"> <br> Email: <br>
+                <input type="email" name="email" placeholder="johndoe@example.com"><br> Phone number: <br>
+                <input type="tel" name="phone" required><br> Zip code: <br>
+                <input type="number" name="zip" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Storm information</legend>
+                Storm date: <br>
+                <input type="text" name="date"><br> Storm type: <br>
+                <input list="stormType" name="stormType">
+                <datalist id="stormType">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstrom">
+                <option value="Tornado">
+            </datalist><br> Storm severity: <br>
+                <input type="range" name="range" min="1" max="10"><br> Storm region: <br>
+                <select name="region">
+               <option value="SelectRegion" selected disabled> Select Region</option>
+                <option value="Franklin">Franklin</option>
+                <option value="Greenville">Greenville</option>
+                <option value="Springfield">Springfield</option>
+            </select><br> User in-danger level: <br>
+                <input type="radio" name="danger" value="yes"> Yes<br>
+                <input type="radio" name="danger" value="maybe"> Maybe<br>
+                <input type="radio" name="danger" value="no"> No<br>
+            </fieldset>
+            Additional information or comments: <br>
+            <textarea name="additional" rows="10" cols="30">
+            </textarea><br>
+            <input type="submit" value="Submit" name="submit">
+        </form>
     </main>
 
-    <footer>
-        <aside class="contact">CONTACT</aside>
-        <p class="bottom">Copyright, title, <span id="currentdate">date</span></p>
+<footer html-include="footer.html">
     </footer>
 </body>
+<script type="text/javascript" src="scripts/javascript.js"></script>
+<script type="text/javascript" src="scripts/include.js"></script>
+<script type="text/javascript" src="scripts/active.js"></script>
+
 </html>

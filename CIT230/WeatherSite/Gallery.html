@@ -1,38 +1,76 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en-us">
-    <head>
-    <title>Brainstorm | Gallery</title>
+
+<head>
+    <title>Franklin</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Franklin site">
-    <link rel="stylesheet" href="styles/weather.css">
+    <meta name="description" content="Franklin page">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 36.5em)" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 64em)" href="styles/large.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 </head>
 
 <body>
-    <header>
-        <img src="images/TemporaryLogo.png" alt="logo" id="logo">
-        <h1>Brainstorm</h1>
-        <div class="subheading">A Meteor-cre weather service with puns that will make you Flurrious</div>
+
+    <header html-include="header.html">
     </header>
 
-    <nav>
-        <div class="Frank">
-            <a href="Brainstorm.html"> Home | </a>
-            <a href="Franklin.html">Franklin | </a>
-            <a href="Greenville.html">Greenville | </a>
-            <a href="Springfield.html">Springfield | </a>
-            <a href="StormCenter.html">Storm Center | </a>
-            <a href="Gallery.html">Gallery</a>
-        </div>
+    <nav html-include="nav.html" html-include-cb="navWayfind">
     </nav>
 
     <main>
-        
+        <container class="grid-container">
+
+            <container class="grid-item" id="image1">
+                <img src="images/active-activity-adventure-547116.jpg" id="active">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque ligula, ut tempus neque. Nulla interdum purus nulla, et molestie libero commodo a. Quisque sit amet mauris mollis ligula laoreet pulvinar at vitae metus.
+                </div>
+            </container>
+            <container class="grid-item" id="image2">
+                <img src="images/adult-adventure-austria-674867.jpg" id="austria">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque ligula, ut tempus neque. Nulla interdum purus nulla, et molestie libero commodo a. Quisque sit amet mauris mollis ligula laoreet pulvinar at vitae metus.
+                </div>
+            </container>
+            <container class="grid-item" id="image3">
+                <img src="images/adult-backpack-daylight-211051.jpg" id="backpack">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque ligula, ut tempus neque. Nulla interdum purus nulla, et molestie libero commodo a. Quisque sit amet mauris mollis ligula laoreet pulvinar at vitae metus.
+                </div>
+            </container>
+            <container class="grid-item" id="image4">
+                <img src="images/atmosphere-blue-sky-bright-940543.jpg" id="atmostphere">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque ligula, ut tempus neque. Nulla interdum purus nulla, et molestie libero commodo a. Quisque sit amet mauris mollis ligula laoreet pulvinar at vitae metus.
+                </div>
+            </container>
+            <container class="grid-item" id="image5">
+                <img src="images/blur-bokeh-car-1105674.jpg" id="car">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque ligula, ut tempus neque. Nulla interdum purus nulla, et molestie libero commodo a. Quisque sit amet mauris mollis ligula laoreet pulvinar at vitae metus.
+                </div>
+            </container>
+            <container class="grid-item" id="image7">
+                <img src="images/cold-dawn-daylight-1105655.jpg" id="dawn">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque ligula, ut tempus neque. Nulla interdum purus nulla, et molestie libero commodo a. Quisque sit amet mauris mollis ligula laoreet pulvinar at vitae metus.
+                </div>
+            </container>
+
+        </container>
+
     </main>
 
-    <footer>
-        <aside class="contact">CONTACT</aside>
-        <p class="bottom">Copyright, title, <span id="currentdate">date</span></p>
+<footer html-include="footer.html">
     </footer>
+
 </body>
+<script type="text/javascript" src="scripts/javascript.js"></script>
+<script type="text/javascript" src="scripts/include.js"></script>
+<script type="text/javascript" src="scripts/active.js"></script>
+
 </html>
