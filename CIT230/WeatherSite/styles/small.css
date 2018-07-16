@@ -21,6 +21,20 @@ nav ul li.active a{
     margin-bottom: 135px;
 }
 
+#town-data{
+    display: none;
+}
+
+
+#Weather-story{
+    display: block;
+}
+
+#Weather-story-img{
+    width: 95%;
+    margin: 5px;
+}
+
 fieldset{
     margin: auto;
     width: 300px;
@@ -155,6 +169,7 @@ nav ul li a:hover {
 
 main {
     text-align: center;
+    background-color: white;
 }
 #mainImage{
     max-width: 100%;
@@ -203,10 +218,9 @@ main {
     display: none;
 }
 
-article{
+#town-article{
     border: solid;
     margin: 10px;
-
 }
 #articleImage{
     margin: 5px;

@@ -8,6 +8,45 @@
 
   }
 
+#Weather-story-img{
+    float: right;
+    width: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid;
+}
+#Patton{
+    background-color: white;
+}
+
+.main-left{
+    width: 45%;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.main-right{
+    width: 45%;
+    float: right;
+    padding: 5px;
+    margin: 5px;
+    margin-right: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+}
+
+#Weather-story{
+    border: none;
+}
+
+#town-data{
+    display: block;
+    background-color: white;
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: auto auto;
@@ -65,7 +104,6 @@ button{
 .hide{
     display: block;
 }
-main {}
 #Fsmall{
     display: none;
 }
@@ -126,6 +164,7 @@ table{
     float: right;
     max-height: 16em;
 }
-article{
-        height: 21em;
+#town-article{
+    height: 21em;
+    display: block;
 }
