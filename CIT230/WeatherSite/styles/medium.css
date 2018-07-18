@@ -8,44 +8,45 @@
 
   }
 
-#Weather-story-img{
-    float: right;
-    width: 45%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: solid;
-}
-#Patton{
-    background-color: white;
-}
-
-.main-left{
-    width: 45%;
-    float: left;
-    padding: 5px;
-    margin: 5px;
-    margin-left: 10px;
-    box-shadow: 5px 5px 10px gray;
-}
-
-.main-right{
-    width: 45%;
-    float: right;
-    padding: 5px;
-    margin: 5px;
-    margin-right: 10px;
-    box-shadow: 5px 5px 10px gray;
-}
+#town-data{
+    display: block;
 }
 
 #Weather-story{
-    border: none;
+    display: block;
+    margin-top: 50px;
+}
+#weatherStoryImage{
+    margin-top: 20px;
+    width: 50%;
+    margin: 10px;
 }
 
-#town-data{
-    display: block;
-    background-color: white;
+fieldset{
+    margin: auto;
+    width: 300px;
 }
+
+.homeImageLeft{
+    width: 50%;
+    border: solid;
+    float: left;
+}
+.homeImageRight{
+    width: 50%;
+    border: solid;
+    float: right;
+}
+
+.homeArticle{
+    box-shadow: 5px 5px 10px gray;
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 .grid-container{
     display: grid;
@@ -112,8 +113,7 @@ button{
 }
 #Fmed{
     display: block;
-    width: auto;
-    margin-top: ;
+    max-width: 60%;
     height: 17em;
     border: solid;
     float: left;
@@ -131,6 +131,12 @@ button{
     top: 180px;
     left: 25px;
     font-size: 30px;
+}
+.conditions{
+    margin-top: 100px;
+}
+.current{
+    margin-top: 50px;
 }
 
 #icon{}

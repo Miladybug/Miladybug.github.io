@@ -2,8 +2,42 @@
         
     #panorama { display: block; }  
     #mainImage { display: none; }
-
   }
+
+#Weather-story{
+    width: 95%;
+    height: 380px;
+}
+
+#WeatherStoryText{
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.homeImageRight, .homeImageLeft{
+    width: 85%;
+    margin: 7.5%;
+}
+
+.homeArticle{
+    width: 25%;
+}
+#townData{
+    display: inline;
+}
+
+#Home-Franklin{
+    float: left;
+    margin-left: 5%;
+}
+#Home-Springfield{
+    float: right;
+    margin-right: 5%;
+    position: absolute;
+    right: 0px;
+    top: 580px;
+}
+
 
 .grid-container{
     display: grid;

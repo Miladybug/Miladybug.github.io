@@ -1,14 +1,15 @@
-/*white = #ffffff
-gray = #394648
-blue = #10c9c3
-green = #0b807d
-yellow = #ffe74c
-
-font = Century Gothic
-*/
-
-
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+
+
+#town-data{
+    display: none;
+}
+#weatherStoryImage{
+    width: 85%;
+    border: solid;
+    margin-top: 10px;
+}
 
 nav ul li.active a{
     background-color: darkgray;
@@ -19,25 +20,6 @@ nav ul li.active a{
     font-size: 30px;
     margin-top: 135px;
     margin-bottom: 135px;
-}
-
-#town-data{
-    display: none;
-}
-
-
-#Weather-story{
-    display: block;
-}
-
-#Weather-story-img{
-    width: 95%;
-    margin: 5px;
-}
-
-fieldset{
-    margin: auto;
-    width: 300px;
 }
 
 container img{
@@ -88,7 +70,7 @@ header {
     justify-content: space-between;
 }
 header h1 {
-    font-size: 22px;
+    font-size: 25px;
 }
 header img {
     width: 100px;

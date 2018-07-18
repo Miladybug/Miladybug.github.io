@@ -22,7 +22,6 @@
     </nav>
 
     <main>
-        <h2 class="page-title">Greenville</h2>
         <div id="FlexTop">
             <img src="images/FranklinLarge5.jpg" id="Flarge" alt="panorama">
             <div id="Ltext">Large</div>
@@ -31,6 +30,7 @@
             <img src="images/FranklinMed4.jpg" id="Fmed" alt="regular image">
             <div id="Mtext">Medium</div>
             <section class="weather-summary">
+               <h2>Greenville</h2>
                 <div class="current">
                     <p>Current weather: <span id="weather-string"></span></p>
                     <picture>
@@ -91,7 +91,7 @@
         </article>
     </main>
 
-    <footer html-include="footer.html">
+<footer html-include="footer.html" html-include-cb="getDate">
     </footer>
 <script type="text/javascript" src="scripts/javascript.js"></script>
 <script type="text/javascript" src="scripts/Greenville-weather.js"></script>
