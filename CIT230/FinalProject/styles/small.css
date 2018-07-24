@@ -172,8 +172,7 @@ main{
 #parts{
     margin: auto;
     max-width: 90%;
-    display: grid;
-    
+    display: none;/*grid*/  
     grid-template-columns: auto;
     padding: 10px;
 }
