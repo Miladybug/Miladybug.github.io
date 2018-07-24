@@ -143,8 +143,6 @@ main{
 #bikes{
     margin: auto;
     max-width: 90%;
-    display: grid;
-    grid-template-columns: auto;
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -152,7 +150,16 @@ main{
     width: 100%;
 }
 .bike-grid{
+
+}
+div.scrollmenu{
+    overflow: auto;
+    white-space: nowrap;
+}
+div.scrollmenu container{
+    display: inline-block;
     text-align: center;
+    width: 33%;
     margin: 1%;
     border: solid;
     border-color: #114503;
@@ -314,4 +321,65 @@ Slideshow CSS
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+
+
+* {box-sizing: border-box}
+.bike-grid, .bike-grid2, .bike-grid3{
+    width: 33%;
+    height: 420px;
+    display: none;
+    border: solid;
+    background-color: white;
+    text-align: center;
+}
+.bike-grid2{
+    position: absolute;
+    top: -420px;
+    left: 33%
+}
+.bike-grid3{
+    position: absolute;
+    top: -420px;
+    left: 66%
+}
+/*img {vertical-align: middle;}*/
+
+/* Slideshow container */
+.slideshow{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -30px;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+    left:-40px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
 }

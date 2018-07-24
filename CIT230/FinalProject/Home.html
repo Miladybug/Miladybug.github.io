@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Franklin page">
     <link rel="stylesheet" type="text/css" href="styles/small.css">
-    
+
     <link rel="stylesheet" type="text/css" media="only screen and (min-width: 36.5em)" href="styles/medium.css">
     <link rel="stylesheet" type="text/css" media="only screen and (min-width: 64em)" href="styles/large.css">
 
@@ -40,21 +40,16 @@
     <main>
         <section id="photos">
             <div class="slideshow-container">
-
-                <!-- Pictures -->
                 <div class="mySlides fade">
                     <img src="images/action-adventure-bicycle-71104.jpg" style="width:100%">
                 </div>
-
                 <div class="mySlides fade">
                     <img src="images/action-adventure-bicycle-90454.jpg" style="width:100%">
                 </div>
-
                 <div class="mySlides fade">
                     <img src="images/adventure-backlit-bicycle-1088607.jpg" style="width:100%">
                 </div>
 
-                <!-- Next and previous buttons -->
                 <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a id="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
@@ -100,28 +95,76 @@
             </container>
         </section>
         <section id="repairs">
-            <a href="Service.html" id="service-link"><div id="repairs-div">Repairs</div></a>
+            <a href="Service.html" id="service-link">
+                <div id="repairs-div">Repairs</div>
+            </a>
         </section>
         <section id="bikes">
-            <container class="bike-grid">
-                <img src="images/Bike1.webp" class="for-sale" id="bike1">
-                <div>
-                    <p><b>$299.99</b><br>Schwinn Mens Ascension 29" Mountain Bike - Black</p>
-                </div>
-            </container>
-            <container class="bike-grid">
-                <img src="images/Bike2.webp" class="for-sale" id="bike2">
-                <div>
-                    A simple service page listing the repair services offered by the company using a data table format.
-                </div>
+            <div class="slideshow">
+                <container class="bike-grid">
+                    <img src="images/Bike1.webp" class="for-sale" id="bike1">
+                    <div>
+                        <p><b>$299.99</b><br>Schwinn Mens Ascension 29" Mountain Bike - Black</p>
+                    </div>
+                </container>
+                <container class="bike-grid">
+                    <img src="images/Bike2.webp" class="for-sale" id="bike2">
+                    <div>
+                        A simple service page listing the repair services offered by the company using a data table format.
+                    </div>
 
-            </container>
-            <container class="bike-grid">
-                <img src="images/Bike3.webp" class="for-sale" id="bike3">
-                <div>
-                    A simple service page listing the repair services offered by the company using a data table format.
-                </div>
-            </container>
+                </container>
+                <container class="bike-grid">
+                    <img src="images/Bike3.webp" class="for-sale" id="bike3">
+                    <div>
+                        A simple service page listing the repair services offered by the company using a data table format.
+                    </div>
+                </container>
+                <a class="prev" onclick="plusSlidesBike(-1, 0);plusSlidesBike(-1, 1);plusSlidesBike(-1, 2)">&#10094;</a>
+                <a class="next" onclick="plusSlidesBike(1, 0);plusSlidesBike(1, 1);plusSlidesBike(1, 2)">&#10095;</a>
+            </div>
+            <div class="slideshow">
+                <container class="bike-grid2">
+                    <img src="images/Bike2.webp" class="for-sale" id="bike2">
+                    <div>
+                        A simple service page listing the repair services offered by the company using a data table format.
+                    </div>
+
+                </container>
+                <container class="bike-grid2">
+                    <img src="images/Bike3.webp" class="for-sale" id="bike3">
+                    <div>
+                        A simple service page listing the repair services offered by the company using a data table format.
+                    </div>
+                </container>
+                <container class="bike-grid2">
+                    <img src="images/Bike1.webp" class="for-sale" id="bike1">
+                    <div>
+                        <p><b>$299.99</b><br>Schwinn Mens Ascension 29" Mountain Bike - Black</p>
+                    </div>
+                </container>
+            </div>
+            <div class="slideshow">
+                <container class="bike-grid3">
+                    <img src="images/Bike3.webp" class="for-sale" id="bike3">
+                    <div>
+                        A simple service page listing the repair services offered by the company using a data table format.
+                    </div>
+                </container>
+                <container class="bike-grid3">
+                    <img src="images/Bike1.webp" class="for-sale" id="bike1">
+                    <div>
+                        <p><b>$299.99</b><br>Schwinn Mens Ascension 29" Mountain Bike - Black</p>
+                    </div>
+                </container>
+                <container class="bike-grid3">
+                    <img src="images/Bike2.webp" class="for-sale" id="bike2">
+                    <div>
+                        A simple service page listing the repair services offered by the company using a data table format.
+                    </div>
+
+                </container>
+            </div>
         </section>
         <section id="parts">
             <container class="parts-grid">
@@ -163,5 +206,6 @@
 
 <script type="text/javascript" src="scripts/slideshow.js"></script>
 <script type="text/javascript" src="scripts/nav.js"></script>
+<script type="text/javascript" src="scripts/bikeslides.js"></script>
 
 </html>
