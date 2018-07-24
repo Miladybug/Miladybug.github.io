@@ -1,53 +1,263 @@
 * {box-sizing:border-box}
 
-
 header img{
-    width: 150px;
+    width: 100%;
     margin-bottom: 0px;
 }
 header h1{
     font-family: Satisfy;
-    font-size: 20px;
-    margin-top: 0px
+    font-size: 240%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
-header{
-    width: 25%;
-    float: left;
-}
-nav ul{
-    list-style-type: none;
-    width: 75%;
-    float: right;
-}
-li{
-    border: solid;
-    margin: 1px;
-    padding: 2px;
-    display: inline;
+header{ 
+    width: 95%;
+    margin: auto;
+    background-color: #f4ede7;
 }
 
-/*
-******
+a{
+    color: #0b3301;
+}
+
+nav ul li a {
+    display: block;
+    padding: 5%;
+    text-align: center;
+}
+nav ul{
+    margin: 0px;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+nav li{
+    border: solid;
+    margin: -1px;
+    display: inline;
+    border-color: #114503;
+    background-color: #417B5A;
+    color: #114503;
+    float: right;
+    width: 100%;
+}
+
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.dropbtn {
+    background-color:  #f4ede7 ;
+    border: none;
+    cursor: pointer;
+    transition:: 0.4s;
+    margin: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.hide{
+    display: none;
+}
+
+
+#page-title{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    background-color: #f4ede7;
+    color: #254441;
+    font-family: 'Amatic SC', cursive;
+}
+
+#tours{
+    margin: auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+.tour-photos{
+    width: 100%;
+}
+.tour-grid{
+    text-align: center;
+    margin: 5%;
+    border: solid;
+    border-color: #114503;
+    padding: 5px;
+}
+
+.tour-page-photo{
+    width: 90%;
+    margin-left: 5%;
+}
+.learn-more{
+    padding: 5%;
+    text-align: center;
+    border: solid;
+    border-color: #114503;
+    background-color: #417B5A;
+    color: #114503;
+}
+
+#repairs-div{
+    background-color: #25CED1; 
+    text-align: center;
+    font-size: 50px;
+    padding: 14px;
+    width: 100%;
+    height: 100px;
+    color: #254441;
+}
+#repairs-img{
+    width: 100%;
+    height: 100px;
+}
+#service-link{
+    text-decoration: none;
+}
+
+#bikes{
+    margin: auto;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.for-sale{
+    width: 100%;
+}
+.bike-grid{
+    text-align: center;
+    margin: 1%;
+    border: solid;
+    border-color: #114503;
+    padding: 5px;
+    background-color: white;
+}
+
+#bike-sales-grid{
+    grid-template-columns: auto auto;
+    padding-left: 15%;
+    background-color: #f4ede7;
+}
+.bike-sales{
+    width: 96%;
+    background-color: #f4ede7;
+    margin: 2%;
+}
+.bike-description{
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+.bike-container{
+    border: solid;
+    width: 40%;
+    margin: 5px;
+    display: inline-grid;
+    background-color: white;
+}
+
+#parts{
+    margin: auto;
+    max-width: 90%;
+    display: grid;
+    
+    grid-template-columns: auto;
+    padding: 10px;
+}
+.sale-parts{
+    width: 100%;
+}
+.parts-grid{
+    text-align: center;
+    margin: 1%;
+    border: solid;
+    border-color: #254441;
+    padding: 5px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+table,td{
+    border: solid;
+    border-collapse: collapse;
+}
+table{
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+td{
+    width: 20%;
+    padding: 3px;
+}
+
+#contact-info{
+    width: 50%;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+}
+#mapholder{
+    border: solid;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer{
+    color:  #25CED1;
+    padding: 20px;
+    text-align: center;
+    font-size: 100px;
+    background-color: #254441;
+}
+
+/*******
 Slideshow CSS
-******
-*/
+*******/
 /* Slideshow container */
 .slideshow-container {
   max-width: 85%;
   position: relative;
   margin: auto;
 }
-
 /* Hide the images by default */
 .mySlides {
     display: none;
 }
-
 /* Next & previous buttons */
-.prev, .next {
+#prev, #next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -57,18 +267,15 @@ Slideshow CSS
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-
 /* Position the "next button" to the right */
-.next {
+#next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+#prev:hover, #next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -79,16 +286,6 @@ Slideshow CSS
   width: 100%;
   text-align: center;
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -100,11 +297,9 @@ Slideshow CSS
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -112,12 +307,10 @@ Slideshow CSS
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}

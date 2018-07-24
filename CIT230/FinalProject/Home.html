@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Franklin page">
     <link rel="stylesheet" type="text/css" href="styles/small.css">
-    <!--
-    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 36.5em)" href="">
-    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 64em)" href="">
--->
+    
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 36.5em)" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 64em)" href="styles/large.css">
+
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Amatic+SC" rel="stylesheet">
+    <link rel="icon" href="images/Logo.PNG">
 </head>
 
 <body>
@@ -21,13 +23,18 @@
         <h1>The Mountain Spoke</h1>
     </header>
     <nav>
-        <ul>
-            <li>Home</li>
-            <li>Adventure Tours</li>
-            <li>Events</li>
-            <li>Sales</li>
-            <li>Service</li>
-            <li>Contact</li>
+        <button class="dropbtn" onclick="dropdown();myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+        <ul id="navigation" class="hide">
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Service.html">Service</a></li>
+            <li><a href="Sales.html">Sales</a></li>
+            <li><a href="Event.html">Events</a></li>
+            <li><a href="Tours.html">Adventure Tours</a></li>
+            <li><a href="Home.html">Home</a></li>
         </ul>
     </nav>
     <main>
@@ -36,26 +43,20 @@
 
                 <!-- Pictures -->
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
                     <img src="images/action-adventure-bicycle-71104.jpg" style="width:100%">
-                    <div class="text">Caption Text</div>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
                     <img src="images/action-adventure-bicycle-90454.jpg" style="width:100%">
-                    <div class="text">Caption Two</div>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
                     <img src="images/adventure-backlit-bicycle-1088607.jpg" style="width:100%">
-                    <div class="text">Caption Three</div>
                 </div>
 
                 <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a id="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <br>
 
@@ -67,20 +68,100 @@
             </div>
         </section>
         <section id="tours">
-
+            <container class="tour-grid" id="tour1">
+                <img src="images/active-adventure-bicycle-247445.jpg" class="tour-photos">
+                <div>
+                    <h3>Glacier & Waterton Lakes Bike Tour</h3>
+                    <p>
+                        It's called Big Sky. Yet you're still amazed by how <i>big</i> it is. You enjoy miles of scenic roads and the sound of your wheels spinning. You ride and talk. You ride and don't talk. You're awestruck by a waterfall's force. You question why you don't live closer to the mountains. You're in two magnificent national parks. And you'll never be the same.
+                    </p>
+                    <button class="learn-more"><a href="Glacier.html">Learn More</a></button>
+                </div>
+            </container>
+            <container class="tour-grid" id="tour2">
+                <img src="images/adventure-bicycle-bike-161172.jpg" class="tour-photos">
+                <div>
+                    <h3>Cycle the Continential Divide</h3>
+                    <p>
+                        The Great Divide Mountain Bike Route (GDMBR) is the most recognized and important off-pavement cycling route in the United States, if not the world. The route crisscrosses the Continental Divide from north to south starting in Banff, Alberta, Canada and finishing at the US/Mexico border in Antelope Wells, New Mexico.
+                    </p>
+                    <button class="learn-more"><a href="Event.html">Learn More</a></button>
+                </div>
+            </container>
+            <container class="tour-grid" id="tour3">
+                <img src="images/bikes-coast-cycling-160949.jpg" class="tour-photos">
+                <div>
+                    <h3>Yellowstone National Park Bide Tour</h3>
+                    <p>
+                        A Yellowstone National Park bike tour is a otherworldly experience especially if you like wildlife, geysers and fabulous landscapes. This tour spends three days in the National Park and then 4 days in the lessor know, but still amazing Greater Yellowstone Ecosystem. We consider Day 7’s Bear Tooth Pass to be one of the top three climbs on any of our 30 bike touring itineraries!<br>Join the local experts at Lizard Head Cycling Guides as we explore the Yellowstone Country together and are challenged by some of North America’s most amazing cycling terrain.
+                    </p>
+                    <button class="learn-more"><a href="Yellowstone.html">Learn More</a></button>
+                </div>
+            </container>
         </section>
         <section id="repairs">
-
+            <a href="Service.html" id="service-link"><div id="repairs-div">Repairs</div></a>
         </section>
         <section id="bikes">
+            <container class="bike-grid">
+                <img src="images/Bike1.webp" class="for-sale" id="bike1">
+                <div>
+                    <p><b>$299.99</b><br>Schwinn Mens Ascension 29" Mountain Bike - Black</p>
+                </div>
+            </container>
+            <container class="bike-grid">
+                <img src="images/Bike2.webp" class="for-sale" id="bike2">
+                <div>
+                    A simple service page listing the repair services offered by the company using a data table format.
+                </div>
 
+            </container>
+            <container class="bike-grid">
+                <img src="images/Bike3.webp" class="for-sale" id="bike3">
+                <div>
+                    A simple service page listing the repair services offered by the company using a data table format.
+                </div>
+            </container>
         </section>
         <section id="parts">
-
+            <container class="parts-grid">
+                <img src="images/helmetClipArt.gif" class="sale-parts" id="part1">
+                <div>
+                    Include one sales page displaying a minimum of three bicycle models of different makes and provide some basic specifications.
+                </div>
+            </container>
+            <container class="parts-grid">
+                <img src="images/helmetClipArt.gif" class="sale-parts" id="part2">
+                <div>
+                    Include one sales page displaying a minimum of three bicycle models of different makes and provide some basic specifications.
+                </div>
+            </container>
+            <container class="parts-grid">
+                <img src="images/helmetClipArt.gif" class="sale-parts" id="part3">
+                <div>
+                    Include one sales page displaying a minimum of three bicycle models of different makes and provide some basic specifications.
+                </div>
+            </container>
+            <container class="parts-grid">
+                <img src="images/helmetClipArt.gif" class="sale-parts" id="part4">
+                <div>
+                    Include one sales page displaying a minimum of three bicycle models of different makes and provide some basic specifications.
+                </div>
+            </container>
+            <container class="parts-grid">
+                <img src="images/helmetClipArt.gif" class="sale-parts" id="part5">
+                <div>
+                    Include one sales page displaying a minimum of three bicycle models of different makes and provide some basic specifications.
+                </div>
+            </container>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        Footer Placeholder
+    </footer>
 </body>
 
 <script type="text/javascript" src="scripts/slideshow.js"></script>
+<script type="text/javascript" src="scripts/nav.js"></script>
+
 </html>
