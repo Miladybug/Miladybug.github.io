@@ -47,11 +47,7 @@ nav{
 }
 
 #page-title{
-    width: 100%;
-    text-align: center;
     font-size: 60px;
-    padding: 0px;
-    margin: 0px;
 }
 
 #tours{
@@ -104,24 +100,19 @@ table{
     margin: auto;
     margin-bottom: 40px;
     margin-top: 20px;
+    width: 67%;
 }
 td{
     width: 20%;
-    padding: 3px;
+    padding: 5px;
 }
 
 #contact-info{
     width: 50%;
-    margin: auto;
     font-size: 30px;
-    text-align: center;
 }
 #mapholder{
-    border: solid;
     width: 50%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 #contact-footer{
