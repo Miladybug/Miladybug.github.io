@@ -80,24 +80,16 @@ nav{
 #bike-sales-grid{
     grid-template-columns: auto auto;
     padding-left: 15%;
-    background-color: #f4ede7;
-}
-.bike-sales{
-    width: 96%;
-    background-color: #f4ede7;
-    margin: 2%;
-}
-.bike-description{
-    width: 90%;
-    margin-left: 5%;
-    text-align: center;
 }
 .bike-container{
-    border: solid;
     width: 40%;
-    margin: 5px;
-    display: inline-grid;
-    background-color: white;
+}
+.bike-desc{
+    display: block;
+}
+.bike-grid, .bike-grid2, .bike-grid3{
+    width: 33%;
+    border: solid;
 }
 
 #parts{
@@ -130,6 +122,11 @@ td{
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#contact-footer{
+    width: 45%;
+    float: left;
 }
 
 #prev, #next {
