@@ -21,12 +21,15 @@ nav ul li a {
     display: block;
     padding: 5%;
     text-align: center;
+    color: #114503;
 }
 nav ul{
+    position: relative;
     margin: 0px;
     list-style-type: none;
     width: 100%;
     padding: 0;
+    z-index: 1;
 }
 nav li{
     border: solid;
@@ -34,7 +37,6 @@ nav li{
     display: inline;
     border-color: #114503;
     background-color: #417B5A;
-    color: #114503;
     float: right;
     width: 100%;
 }
@@ -70,6 +72,9 @@ nav li{
 .hide{
     display: none;
 }
+.active{
+    background-color: #25CED1
+}
 
 #page-title{
     width: 100%;
@@ -81,7 +86,7 @@ nav li{
 a{
     color: #0b3301;
 }
-main{
+body{
     background-color: #f4ede7;
     color: #254441;
     font-family: 'Amatic SC', cursive;
@@ -250,6 +255,7 @@ Slideshow CSS
   max-width: 85%;
   position: relative;
   margin: auto;
+  z-index: 0;
 }
 /* Hide the images by default */
 .mySlides {
@@ -299,7 +305,7 @@ Slideshow CSS
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
+.active-photo, .dot:hover {
   background-color: #717171;
 }
 /* Fading animation */
