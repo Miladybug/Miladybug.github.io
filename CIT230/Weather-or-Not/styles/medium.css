@@ -1,0 +1,73 @@
+/*
+White = #FFFFFF
+Off-white = #DEE4F7
+Black = #02001C
+Gray = #201F33
+Bright Green = #A5BE00
+
+font-family: 'Abel', sans-serif;
+font-family: 'Libre Franklin', sans-serif; - thin?
+font-family: 'Poiret One', cursive;
+*/
+@media only screen and (min-width: 37.5em);
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+header{
+    margin: 0;
+}
+
+nav{
+    display: block;
+    margin: 0;
+}
+nav ul{
+    background-color: #201F33;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-width: 100%;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+    width: 16.667%;
+    border: 3px solid black;
+    border-right: none;
+    float: left;
+    padding: 1%;
+    margin: 0;
+    font-size: 90%;
+}
+nav ul li a{
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+}
+
+#franklin-img-small{
+    display: none;
+}
+#franklin-img-medium{
+    display: block;
+    width: 100%;
+    border: 3px solid;
+}
+#franklin-img-large{
+    display: none;
+}
+
+table{
+    display: block;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+th, td{
+    border: 2px solid black;
+    height: 35px;
+}
+td{
+    width: 1%;
+}

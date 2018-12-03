@@ -1,0 +1,79 @@
+/*
+White = #FFFFFF
+Off-white = #DEE4F7
+Black = #02001C
+Fray = #201F33
+Bright Green = #A5BE00
+
+font-family: 'Abel', sans-serif;
+font-family: 'Libre Franklin', sans-serif; - thin?
+font-family: 'Poiret One', cursive;
+*/
+
+* { box-sizing: border-box;}
+
+body{
+    background-color: #DEE4F7;
+}
+header{
+    background-color: #02001c;
+    color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 5px;
+    font-family: 'Poiret One', cursive;
+}
+header h1{
+    margin-top: 0px;
+}
+#logo{
+    width: 20px;
+}
+
+nav {
+    display: none;
+}
+
+main{
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 85%;
+    margin: auto;
+    font-family: 'Libre Franklin', sans-serif;   
+    padding: 10px;
+}
+#franklin-img-small{
+    width: 100%;
+    border: 3px solid;
+}
+#franklin-img-medium{
+    display: none;
+}
+#franklin-img-large{
+    display: none;
+}
+#weather-icon{
+    width: 20%;
+}
+table{
+    display: none;
+}
+#franklin-article-img{
+    width: 100%;
+    border: 3px solid;width: 100%;
+    border: 3px solid;
+}
+
+footer{
+    text-align: center;
+}
+#top-footer{
+    background-color: #201F33;
+    color: #DEE4F7;
+    padding: 10px;
+}
+#bottom-footer{
+    background-color: #02001C;
+    color: #DEE4F7;
+    padding: 10px;
+    
+}

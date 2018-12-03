@@ -1,0 +1,27 @@
+/*
+White = #FFFFFF
+Off-white = #DEE4F7
+Black = #02001C
+Gray = #201F33
+Bright Green = #A5BE00
+
+font-family: 'Abel', sans-serif;
+font-family: 'Libre Franklin', sans-serif; - thin?
+font-family: 'Poiret One', cursive;
+*/@media only screen and (min-width: 64em);
+
+main{
+    
+}
+
+#franklin-img-small{
+    display: none;
+}
+#franklin-img-medium{
+    display: none;
+}
+#franklin-img-large{
+    display: block;
+    width: 100%;
+    border: 3px solid;
+}

@@ -15,6 +15,7 @@ header{
     width: 95%;
     margin: auto;
     background-color: #f4ede7;
+    margin-top: 0px;
 }
 
 nav ul li a {
@@ -22,6 +23,7 @@ nav ul li a {
     padding: 5%;
     text-align: center;
     color: #114503;
+    text-decoration: none;
 }
 nav ul{
     position: relative;
@@ -88,7 +90,7 @@ a{
 body{
     background-color: #f4ede7;
     color: #254441;
-    font-family: 'Amatic SC', cursive;
+    font-family: Montserrat;
 }
 
 #tours{
