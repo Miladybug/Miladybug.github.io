@@ -11,9 +11,10 @@
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,400" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+        <script type="text/javascript" src="scripts/date.js"></script>
     </head>
-    <body>
+    <body onload="getDate()">
         <header>
 <!--            <img id="logo" src="images/Logo.png">-->
             <h1>WEATHER OR NOT</h1>
@@ -95,9 +96,7 @@
                 (999) 999.9999<br>
                 contact@theurl.com<br>
             </div>
-            <div id="bottom-footer">
-                (copy)2020 * Weather or Not * date
-            </div>
+            <div id="bottom-footer">(copy)2020 * Weather or Not * <span id="currentdate"></span></div>
         </footer>
     </body>
 </html>
