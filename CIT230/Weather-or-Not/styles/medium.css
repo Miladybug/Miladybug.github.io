@@ -17,6 +17,9 @@ header{
     margin: 0;
 }
 
+#hamburger{
+    display: none;
+}
 nav{
     display: block;
     margin: 0;

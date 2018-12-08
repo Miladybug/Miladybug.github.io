@@ -10,8 +10,13 @@ font-family: 'Libre Franklin', sans-serif; - thin?
 font-family: 'Poiret One', cursive;
 */@media only screen and (min-width: 64em);
 
-main{
-    
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 30px;
+    padding-right: 20%;
 }
 
 #franklin-img-small{

@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
         <script type="text/javascript" src="scripts/date.js"></script>
     </head>
-    <body onload="getDate()">
+    <body onload="getDate(), windChill()">
         <header>
 <!--            <img id="logo" src="images/Logo.png">-->
             <h1>WEATHER OR NOT</h1>
@@ -46,15 +46,12 @@
                     <img id="weather-icon" src="images/Sun%20Icon.png">
                 </div>
                 <div id="high-low">
-                    <div>High: 90 &#8457</div>
-                    <div>Low: 66 &#8457</div>
+                    <div>High: <span id="high-temp">90</span> &#8457</div>
+                    <div>Low: <span id="low-temp">66</span> &#8457</div>
                 </div>
-                <div id="precipitation">
-                    Precipitation: 0%
-                </div>
-                <div id="wind">
-                    Wind: 5 mph SW
-                </div>
+                <div id="precipitation">Precipitation: 0%</div>
+                <div id="wind">Wind: <span id="wind-speed">5</span> mph SW</div>
+                <div id="wind-chill">Wind Chill: <span id="wind-temp"></span> &#8457</div>
             </div>
             <table>
                 <thead>
@@ -90,7 +87,15 @@
             <div id="franklin-article">
                 <h3>Frankin Article</h3>
                 <img id="franklin-article-img" src="images/clouds-conifers-fir-trees-275538.jpg">
-                <p>These sketches are provided by the 'client' and should be considered over your sketches from the previous week. DO NOT CONSIDER the style and other visual details to be what you need to have. Rather, these are sketches of the layout and some very rough design cues.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc enim orci, euismod quis mi quis, tempor pretium dolor. Quisque nec odio dolor. Sed lobortis vulputate ligula. Sed vestibulum, quam id tincidunt rutrum, felis nisl eleifend dolor, at fermentum velit urna at ante. Pellentesque ut metus id felis fermentum gravida vitae sit amet lorem. Donec suscipit urna neque, ut bibendum libero faucibus sed. Morbi in neque egestas, facilisis neque a, sodales risus.</p>
+                
+                <p>Etiam semper ultricies ultrices. Etiam ac metus a mauris finibus sagittis. Vivamus id fermentum turpis. Curabitur sit amet eros a lacus ornare suscipit. Donec euismod maximus ornare. Proin non feugiat tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet neque ut tellus vulputate efficitur. Sed in lorem aliquet, rutrum elit vel, molestie urna. Mauris dapibus magna sed velit malesuada, id suscipit eros rhoncus. Sed feugiat, velit non tempor sagittis, ipsum libero hendrerit libero, a dignissim nisl metus non risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id euismod massa, id pretium eros. Morbi convallis mi leo, at efficitur mauris tempor eget. Phasellus viverra eu purus quis pharetra.</p>
+                
+                <p>In elit nunc, eleifend a lacinia sit amet, maximus sit amet metus. Suspendisse in elementum ligula. Nulla facilisi. In ut mauris at metus tempus euismod non non velit. Donec commodo faucibus orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. In sollicitudin magna quis urna efficitur, in condimentum justo suscipit. Donec congue vehicula ligula, sit amet consectetur leo porta quis. Aenean vitae est in massa lacinia accumsan tristique a lectus. Nullam non nunc vestibulum, mattis urna ut, sagittis tortor. Etiam finibus tellus eget nisi pulvinar pharetra. Nulla ut ullamcorper justo.</p>
+                
+                <p>Ut hendrerit augue maximus metus fermentum rhoncus. Praesent venenatis consequat suscipit. Integer id ante sit amet lorem finibus condimentum. Nulla id odio suscipit, pharetra nulla ac, porttitor mauris. Pellentesque urna dui, auctor a odio nec, rhoncus tincidunt libero. Sed dictum lectus mattis, placerat nulla in, molestie risus. Morbi quis euismod lacus.</p>
+                
+                <p>Cras tincidunt eros a vehicula finibus. Nam varius varius sem, et sodales turpis rhoncus vitae. In at libero eget dolor viverra pharetra. Fusce maximus rhoncus magna, a ornare nulla commodo id. Suspendisse at dui velit. Vestibulum feugiat velit in dolor viverra dignissim. Sed a leo eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id risus vel lorem venenatis vulputate. Duis pretium lacus mauris, ac lacinia felis ullamcorper non. Phasellus suscipit sem nec purus pulvinar tempor. Ut facilisis non sapien vel imperdiet. Vivamus non nisl non risus consectetur molestie.</p>
             </div>
         </main>
         <footer>
