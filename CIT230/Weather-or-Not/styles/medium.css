@@ -21,6 +21,9 @@ nav{
     display: block;
     margin: 0;
 }
+.navigation{
+    display: block;
+}
 nav ul{
     background-color: #201F33;
     list-style-type: none;

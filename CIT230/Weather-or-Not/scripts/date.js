@@ -14,3 +14,7 @@ function getDate() {
 
     document.getElementById("currentdate").innerHTML = dayOfWeek + ", " + d.getDate() + " " + monthFinal + " " + d.getFullYear();
 }
+
+function dropdown(){
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
