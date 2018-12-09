@@ -53,16 +53,49 @@ nav ul li a{
     text-decoration: none;
 }
 
+
 #franklin-img-small{
-    display: none;
+    width: 60%;
+    float: left;
+    margin-bottom: 2%;
 }
-#franklin-img-medium{
+main h2 {
+    margin-top: 0;
+}
+#weather-icon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 60%
+}
+#current-conditions{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#summary{
     display: block;
     width: 100%;
-    border: 3px solid;
+    margin-left: 0%;
+    font-size: 20px;
 }
-#franklin-img-large{
-    display: none;
+#weather-description{
+    float: right;
+    margin-right: 10%;
+}
+#high-low{
+    display: block;
+    margin: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+#high {
+    margin: 9px;
+    margin-right: 20px;
+}
+#low, #wind, #precipitation, #wind-chill {
+    margin: 7px;
+    margin-right: 20px;
 }
 
 table{
